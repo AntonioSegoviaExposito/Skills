@@ -1,0 +1,19 @@
+pr-reply/SKILL.md
+  s_715d527ab2b5be::t_dfb294ae656fce 1-78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "1012287ce24949a5f52db5a546eaf5da614d11f7",
+  "prompts": {},
+  "sessions": {
+    "s_715d527ab2b5be": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_715d527ab2b5bQ2DH9FKg9z10m",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "antoniose <antoniose@ext.inditex.com>"
+    }
+  }
+}
