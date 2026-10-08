@@ -1,0 +1,19 @@
+jira/scripts/jira-query.sh
+  s_715d527ab2b5be::t_e67adf996dfc74 1-113
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "6dae98b8e3a61aaed93dce6c46211faa71d91f45",
+  "prompts": {},
+  "sessions": {
+    "s_715d527ab2b5be": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_715d527ab2b5bQ2DH9FKg9z10m",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "antoniose <antoniose@ext.inditex.com>"
+    }
+  }
+}
