@@ -1,0 +1,19 @@
+jira/SKILL.md
+  s_715d527ab2b5be::t_3e502629665d0d 1-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "3a2ddfef7c3ed8bceb3c8fe6e2c5371413490944",
+  "prompts": {},
+  "sessions": {
+    "s_715d527ab2b5be": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_715d527ab2b5bQ2DH9FKg9z10m",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "antoniose <antoniose@ext.inditex.com>"
+    }
+  }
+}
