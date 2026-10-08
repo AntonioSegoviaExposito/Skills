@@ -1,0 +1,19 @@
+sync-skills/SKILL.md
+  s_715d527ab2b5be::t_63dd16ced49597 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "80d96ffb03b2bfa7b5702a564943c1da7f8c11bd",
+  "prompts": {},
+  "sessions": {
+    "s_715d527ab2b5be": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_715d527ab2b5bQ2DH9FKg9z10m",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "antoniose <antoniose@ext.inditex.com>"
+    }
+  }
+}
