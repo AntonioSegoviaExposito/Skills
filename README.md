@@ -10,6 +10,7 @@ Agent skills, one folder per skill with its `SKILL.md`.
 | `pr-create` | Resolves the ticket, moves to its branch, commits, pushes and opens a draft PR |
 | `pr-ready` | Writes the PR description from the business behavior and marks it ready |
 | `pr-reply` | Drafts evidence-based replies to review comments and posts them after your OK |
+| `resolver` | Resolves a ticket key: related context, a fix inside the ticket, a draft PR, and the analysis comment |
 | `sync-skills` | Updates the installed skills from this repository |
 
 ## Install
