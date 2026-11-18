@@ -6,6 +6,7 @@ Agent skills, one folder per skill with its `SKILL.md`.
 |-------|------|
 | `ask-me` | Interviews you about a plan until every decision is settled |
 | `zoom-out` | Re-explains the current work in prose, from the bigger picture down to user behavior |
+| `use-agy` | Makes the agent a mediator: all code changes and queries go to Google Antigravity CLI as background jobs |
 | `jira` | Reads Jira tickets, searches with JQL and comments on your own tickets |
 | `pr-create` | Resolves the ticket, moves to its branch, commits, pushes and opens a draft PR |
 | `pr-ready` | Writes the PR description from the business behavior and marks it ready |
