@@ -1,0 +1,19 @@
+zoom-out/SKILL.md
+  s_c0c025996aaae2::t_c6175e36b87f58 6,8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "6d4b4a113dc0a4db9bf41a98e2353adb16c41c8a",
+  "prompts": {},
+  "sessions": {
+    "s_c0c025996aaae2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_715d527abffek2epQ2DH9FKg9z",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "antoniose <antoniose@ext.inditex.com>"
+    }
+  }
+}
