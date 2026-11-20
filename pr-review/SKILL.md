@@ -37,11 +37,14 @@ gh pr diff {NUMBER}
 
 **5. Evaluate strictly within ticket scope.** Judge whether the PR implementation is correct and resolves the problem stated in the ticket:
 
-- **Strict scope rule:** Review **only** what the ticket specifies and whether the PR resolves it. Ignore anything outside the ticket scope, unrelated changes, refactors, style nits, or possible improvements—do not comment on or manage them.
+- **Strict scope rule:** Review **only** what the ticket specifies and whether the PR resolves it. Ignore anything outside the ticket scope, unrelated changes, refactors, style nits, or possible improvements—do not comment on or manage them. Never post comments automatically without user confirmation.
 - **If OK and resolves the ticket:** Verdict is `APPROVE` with **no body and no comments** (check only).
 - **If it does not resolve the ticket or has defects in the fix:** Verdict is `REQUEST_CHANGES` (or `COMMENT` only for a non-blocking question on the ticket's fix) with **short, direct inline comments** anchored directly on the relevant diff lines (`path`, `line`, `side: "RIGHT"`), stating the concrete issue or suggested code change. No filler, no praise, no general summary.
 
-**6. Confirm.** Show the verdict (`APPROVE` with no comments, or `{EVENT}` plus `| # | File | Line | Comment |`). Ask with the `ask` tool: **Submit review** (preselected) or **Cancel**. Do not post until it returns. Cancel → **STOP**. Honor free-text edits or skips.
+**6. Confirm.** Never submit a review or post comments on your own.
+
+- If the verdict is `APPROVE` with no comments: show the verdict and ask the user in the chat if it is OK to approve the PR. Do not post until they confirm.
+- If there are inline comments to post: show `{EVENT}` and `| # | File | Line | Why (high-level) | Comment (preview) |`, then ask the user in the chat if it is OK to publish them or if they want any modification. Do not post until they confirm; if they request changes, update the previews and ask again.
 
 **7. Submit the review.**
 
