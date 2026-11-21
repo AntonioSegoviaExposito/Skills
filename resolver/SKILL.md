@@ -31,7 +31,7 @@ Use the fork's answer to state your evidence-backed conclusion and complete the 
 
 **6. Create the PR.** Follow `pr-create` for the verified fix. No changes or no successful verification → stop and report. Do not mark the PR ready.
 
-**7. Review the PR with the same fork.** Resume `FORK_ID` with tools enabled (`--auto-approve`, read-only inspection) and pass the PR URL so the fork—still free of implementation bias and holding the original `Wait!` analysis—reviews the PR against the ticket, business intent, and project conventions:
+**Wait! review the PR with the same fork.** Resume `FORK_ID` with tools enabled (`--auto-approve`, read-only inspection) and pass the PR URL so the fork—still free of implementation bias and holding the original `Wait!` analysis—reviews the PR against the ticket, business intent, and project conventions:
 
 ```bash
 omp --resume "$FORK_ID" --auto-approve --no-lsp --mode json -p "I have proposed this fix for the ticket in {PR_URL}. Without editing any files, can you inspect the PR and analyze whether it fits and makes sense? it solves the root business problem? Is the solution well-designed, strictly within the ticket's scope, and aligned with project standards?" \
@@ -42,7 +42,7 @@ Evaluate the fork's response in the main agent:
 - If it identifies a valid defect or scope mismatch, apply the fix, verify, and push the update to the PR before proceeding.
 - If it raises something that does not apply given our confirmed analysis, note why and discard it without making unnecessary changes.
 
-**8. Post your own analysis.** Show the comment body, then post it on the ticket with `jira`, after the PR exists (and after any follow-up fix from step 7 is pushed). This workflow requests the comment; no additional confirmation is needed. Do not change the ticket's status or fields.
+**7. Post your own analysis.** Show the comment body, then post it on the ticket with `jira`, after the PR exists (and after any follow-up fix from the **Wait! review the PR** check is pushed). This workflow requests the comment; no additional confirmation is needed. Do not change the ticket's status or fields.
 
 Use the ticket's language, confirmed facts, and this Jira wiki-markup structure. Omit the logs section when logs were not consulted. Repeat cases and fixes as needed.
 
