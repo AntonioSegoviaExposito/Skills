@@ -1,0 +1,19 @@
+pr-review/SKILL.md
+  s_c0c025996aaae2::t_f2ebd46bae36ad 6,12,14,16,20,23-24,26,28-29,31,33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "7bf786677176a048d1d63a2e8bfa248b64bdad6c",
+  "prompts": {},
+  "sessions": {
+    "s_c0c025996aaae2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_715d527abffek2epQ2DH9FKg9z",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "antoniose <antoniose@ext.inditex.com>"
+    }
+  }
+}
