@@ -25,11 +25,17 @@ printf '%s\n' "$FORK_OUT" | jq -r 'select(.type=="agent_end") | .messages[-1].co
 
 Use the fork's answer to state your evidence-backed conclusion and complete the **Wait!** item. Distinguish the problem from the suggested solution. If the evidence challenges the ticket's premise or ownership, explain that before editing; do not force a fix just because the ticket asks for one.
 
-**4. Business-decision gate.** Before implementing, assess whether any business decision is too critical to infer and requires explicit stakeholder or user approval, or whether the gathered evidence supports the implementation approach with high confidence. If approval is needed, stop and ask now; otherwise, proceed.
+**4. Run follow-up fork prompt.** Run this command asynchronously and immediately continue to the next step—do not wait for execution or attempt to read its output:
 
-**5. Fix and verify.** Propose and implement the smallest change that resolves strictly the problem stated in the ticket. Follow project conventions. No unrelated fixes, refactors, or cleanup. Verify the affected cases and that behavior outside the ticket remains unchanged. Unclear scope → ask before editing.
+```bash
+nohup omp --resume "$FORK_ID" --no-tools --no-lsp --mode json -p "Based on your analysis above, and taking into account the defined scope and limitations, provide a high-level list of acceptance criteria from a business perspective by which the final solution can be considered validated." >/dev/null 2>&1 &
+```
 
-**6. Create the PR.** Follow `pr-create` for the verified fix. No changes or no successful verification → stop and report. Do not mark the PR ready.
+**5. Business-decision gate.** Before implementing, assess whether any business decision is too critical to infer and requires explicit stakeholder or user approval, or whether the gathered evidence supports the implementation approach with high confidence. If approval is needed, stop and ask now; otherwise, proceed.
+
+**6. Fix and verify.** Propose and implement the smallest change that resolves strictly the problem stated in the ticket. Follow project conventions. No unrelated fixes, refactors, or cleanup. Verify the affected cases and that behavior outside the ticket remains unchanged. Unclear scope → ask before editing.
+
+**7. Create the PR.** Follow `pr-create` for the verified fix. No changes or no successful verification → stop and report. Do not mark the PR ready.
 
 **Wait! review the PR with the same fork.** Resume `FORK_ID` with tools enabled (`--auto-approve`, read-only inspection) and pass the PR URL so the fork—still free of implementation bias and holding the original `Wait!` analysis—reviews the PR against the ticket, business intent, and project conventions:
 
@@ -42,7 +48,7 @@ Evaluate the fork's response in the main agent:
 - If it identifies a valid defect or scope mismatch, apply the fix, verify, and push the update to the PR before proceeding.
 - If it raises something that does not apply given our confirmed analysis, note why and discard it without making unnecessary changes.
 
-**7. Post your own analysis.** Show the comment body, then post it on the ticket with `jira`, after the PR exists (and after any follow-up fix from the **Wait! review the PR** check is pushed). This workflow requests the comment; no additional confirmation is needed. Do not change the ticket's status or fields.
+**8. Post your own analysis.** Show the comment body, then post it on the ticket with `jira`, after the PR exists (and after any follow-up fix from the **Wait! review the PR** check is pushed). This workflow requests the comment; no additional confirmation is needed. Do not change the ticket's status or fields.
 
 Use the ticket's language, confirmed facts, and this Jira wiki-markup structure. Omit the logs section when logs were not consulted. Repeat cases and fixes as needed.
 
