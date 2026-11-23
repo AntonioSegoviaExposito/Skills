@@ -13,6 +13,8 @@ Before starting, create an internal TODO using the native `todo` tool: one item 
 
 **2. Gather context.** Analyze the related tickets, including epics and spikes, and read their comments. Use them as context, not as additional scope.
 
+**Wait! check if continuing makes sense.** Before inspecting code or logs, pause and ask: Does it make sense to continue? Does this actually require a code fix, or is there evidence it may already be resolved or covered by an open related PR? If it is already resolved, has an open related PR, does not belong to our microservice/domain, or can be addressed without opening a PR, stop here and report your analysis.
+
 **3. Gather evidence.** Analyze the affected code and consult logs only when necessary to understand or confirm the reported failure.
 
 **Wait! question the premise before fixing.** Run this step in a forked session of the current context (`PI_SESSION_ID`) so it evaluates all gathered evidence without altering anything, capture its session id (`FORK_ID`), and wait for its answer before continuing:
