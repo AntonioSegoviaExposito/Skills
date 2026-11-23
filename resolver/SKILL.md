@@ -13,7 +13,7 @@ Before starting, create an internal TODO using the native `todo` tool: one item 
 
 **2. Gather context.** Analyze the related tickets, including epics and spikes, and read their comments. Use them as context, not as additional scope.
 
-**Wait! check if continuing makes sense.** Before inspecting code or logs, pause and ask: Does it make sense to continue? Does this actually require a code fix, or is there evidence it may already be resolved or covered by an open related PR? If it is already resolved, has an open related PR, does not belong to our microservice/domain, or can be addressed without opening a PR, stop here and report your analysis.
+**Wait! check if continuing makes sense.** Before inspecting code or logs, pause and evaluate whether continuing makes sense: does it actually require a code fix, or is there evidence it may already be resolved, covered by an open related PR, outside our microservice/domain, or solvable without opening a PR? If there is evidence not to continue (already resolved, open related PR, outside our microservice/domain, or solvable without a PR), stop here and report your analysis immediately without asking `GO` / `NO-GO`. Otherwise, present a brief summary of your findings and the proposed next steps to resolve it, then use the native `ask` tool to request explicit confirmation (`GO` or `NO-GO`) before continuing; if `NO-GO`, stop here and report your analysis.
 
 **3. Gather evidence.** Analyze the affected code and consult logs only when necessary to understand or confirm the reported failure.
 
