@@ -50,7 +50,7 @@ Evaluate the fork's response in the main agent:
 
 **8. Post your own analysis.** Show the comment body, then post it on the ticket with `jira`, after the PR exists (and after any follow-up fix from the **Wait! review the PR** check is pushed). This workflow requests the comment; no additional confirmation is needed. Do not change the ticket's status or fields.
 
-Use the ticket's language, confirmed facts, and this Jira wiki-markup structure. Omit the logs section when logs were not consulted. Repeat cases and fixes as needed.
+Use the ticket's language, domain words, not code words, and leave out classes, files, or APIs unless they are the product surface, confirmed facts, and this Jira wiki-markup structure. Omit the logs section when logs were not consulted. Repeat cases and fixes as needed.
 
 ```
 h3. Análisis
