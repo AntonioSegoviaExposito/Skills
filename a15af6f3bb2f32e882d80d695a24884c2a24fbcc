@@ -1,0 +1,19 @@
+resolver/SKILL.md
+  s_c0c025996aaae2::t_2bd3b4d3ddac01 21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "a15af6f3bb2f32e882d80d695a24884c2a24fbcc",
+  "prompts": {},
+  "sessions": {
+    "s_c0c025996aaae2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_715d527abffek2epQ2DH9FKg9z",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "antoniose <antoniose@ext.inditex.com>"
+    }
+  }
+}
