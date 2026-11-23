@@ -1,0 +1,19 @@
+sync-skills/SKILL.md
+  s_c0c025996aaae2::t_92623aaf81cc51 6,9,12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "99b89e3bdbea4a8e25d75c47260c009270471cae",
+  "prompts": {},
+  "sessions": {
+    "s_c0c025996aaae2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_715d527abffek2epQ2DH9FKg9z",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "antoniose <antoniose@ext.inditex.com>"
+    }
+  }
+}
